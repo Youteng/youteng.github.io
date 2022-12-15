@@ -1,1 +1,25 @@
-就說待補齁，急什麼喇щ(゜ロ゜щ)
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function showContent()
+			{
+				var array = ['就說待補，急什麼喇(＃°Д°)', 'WIP...Σ(っ °Д °;)っ','有空再補ˋ( ° ▽、° ) ']
+				var item = array[Math.floor(Math.random()*array.length)];
+				document.getElementById("WIP").innerHTML=item;
+			}
+		</script>
+		<style>
+			div {
+					display: flex;
+					text-align: center;
+					justify-content: center;
+					font-size:large;
+				}
+		</style>
+	</head>
+<body onload="showContent();">
+<div id="WIP"><div>
+</body>
+</html>
